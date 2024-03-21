@@ -1,0 +1,57 @@
+.section-4{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/stars.jpg');
+    background-size: cover;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-4-left{
+    width: 50%;
+    line-height: 28px;
+    font-size: 16px;
+    color: white;
+    padding-right:  70px;
+}
+.sec-4-right{
+    width: 50%;
+    background-image: url('../images/discuss.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec-4-container{
+    display: flex;
+    width: 80%;
+    height: 400px;
+    font-family: "Karla", sans-serif;
+
+
+}
+
+@media screen and (max-width: 1000px){
+    .sec-4-container{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    
+    .sec-4-left{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .sec-4-right{
+        height: 250px;
+        width: 100%;
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 565px){
+    .section-4{
+        height: 120vh;
+    }
+}  

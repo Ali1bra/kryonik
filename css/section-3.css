@@ -1,0 +1,108 @@
+.section-3{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/stars.jpg');
+    background-size: cover;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+span {
+    font-weight: bold;
+    font-size: 18px;
+
+
+}
+
+.section-3-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.sec-3-top{
+    width: 100%;
+    height: fit-content;
+    font-family: "Karla", sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 20px 0px;
+    color: white;
+
+}
+.sec-3-bottom{
+    display: flex;
+    width: 100%;
+}
+.sec-3-left{
+    width: 50%;
+
+    background-image: url('../images/free.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+}
+
+.sec-3-right{
+    width: 50%;
+    height: 300px;
+    font-family: "Karla", sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    color: white;
+    padding-left: 20px;
+
+}
+
+.sec-3-button{
+    width: 100%;
+}
+
+@media screen and (max-width: 1600px){
+    .sec-3-bottom{
+        flex-direction: column;
+        transform: translateY(50px);
+    }
+    .sec-3-right{
+        width: 100%;
+        height: 300px;
+        font-family: "Karla", sans-serif;
+        line-height: 28px;
+        font-size: 16px;
+        color: white;
+        padding-left: 20px;
+    
+    }
+    .sec-3-left{
+        display: none;
+        
+    }
+    .sec-3-top{
+        transform: translateX(20px);
+    
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    .section-3{
+        height: 130vh;
+    }
+    .section-3-container{
+        transform: translateY(-100px);
+    }
+    
+}
+
+@media screen and (max-width: 565px){
+    .section-3{
+        height: 150vh;
+    }
+
+    
+}
